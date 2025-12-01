@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.vpk.ai</groupId>
+    <artifactId>TRS-gemini-ai-college-counselor</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <adk.version>0.4.0</adk.version>
+    </properties>
+
+    <dependencies>
+        <!-- Google ADK Runtime -->
+        <dependency>
+            <groupId>com.google.adk</groupId>
+            <artifactId>google-adk</artifactId>
+            <version>${adk.version}</version>
+        </dependency>
+
+        <!-- ADK Dev UI (localhost:8000) -->
+        <dependency>
+            <groupId>com.google.adk</groupId>
+            <artifactId>google-adk-dev</artifactId>
+            <version>${adk.version}</version>
+        </dependency>
+
+        <!-- Logging (so SLF4J errors disappear) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!-- Java 21 Compiler -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+
+            <!-- FIX: Allows mvn exec:java to find com.vpk.ai.CollegeCounselorApp -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.vpk.ai.CollegeCounselorApp</mainClass>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
