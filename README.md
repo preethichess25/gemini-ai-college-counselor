@@ -153,3 +153,7 @@ RankingAgent scores colleges using FitScoreTool.
 SummaryAgent compiles final report with top 3 recommendations, cost comparisons, College website link and scholarship info.
 The system displays output in UI using MCPFileTool.
 
+9. Team Member	Core Contribution Area	Key Achievements
+Vinupriya Rajkumar	- System Architecture & Core Development - Proposed the core idea, Implemented the final Multi-Agent orchestration logic, refined the custom RankingAgent and FitScoreTool, performed critical UI testing, and ensured compliance with ADK standards.
+Preethi Rajkumar	- Initial Research & Agent Prototyping	 - Proposed the core problem statement, researched the feasibility of using the Java ADK for agent development and prototyped the initial ProfileCollectorAgent and ResearchAgent based on sample guides.
+Karthiyini Rajkumar	- Data Modeling & Tool Definition	     - Proposed the core idea, Led the research into the college data structure, defined the constraints and scoring logic and assisted in creating the initial logic for the FilterAgent and SummaryAgent.
