@@ -1,8 +1,8 @@
 TRS Gemini AI College Counselor
 Developed By
-* Vinupriya Rajkumar
-* Preethi Rajkumar
-* Karthikeyini Rajkumar
+* Vinupriya Rajkumar - working in Accenture, Bangalore. rsvinupriya@gmail.com
+* Preethi Rajkumar - working in TCS, chennai, preethichess@gmail.com
+* Karthikeyini Rajkumar - working in vyapi, tiruchirapalli, karthichess@gmail.com
 
 1. Problem Statement (WHY)
 
